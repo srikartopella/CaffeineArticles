@@ -92,11 +92,16 @@
         "
       >
         <h1 class="fw-bold my-2">Feedback!!</h1>
-        <form class="form-control w-100" name="Feedback" method="POST" netlify>
+        <form
+          class="form-control w-100"
+          name="Feedback"
+          action="POST"
+          data-netlify="true"
+        >
           <section class="name my-2">
             <label class="my-2" for="name">Name</label>
             <input
-              name="name"
+              name="Name"
               type="text"
               id="name"
               class="form-control"
@@ -107,7 +112,7 @@
           <section class="email my-2">
             <label class="my-2" for="email">Email</label>
             <input
-              name="email"
+              name="Email"
               type="email"
               id="email"
               class="form-control"
