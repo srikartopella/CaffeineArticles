@@ -5,6 +5,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @media screen and (min-width: 700px) {
+        .form-feedback {
+          width: 50% !important;
+        }
+      }
+    </style>
     <title>CaffeineArticles - Feedback</title>
   </head>
   <body>
@@ -70,6 +77,54 @@
       </div>
     </nav>
     <!-- Navbar -->
+
+    <!-- Main content -->
+    <section class="container">
+      <section
+        class="
+          form-feedback
+          mx-auto
+          d-flex
+          flex-column
+          justify-content-center
+          align-items-center
+          my-5
+        "
+      >
+        <h1 class="fw-bold my-2">Feedback!!</h1>
+        <form class="form-control w-100">
+          <section class="name my-2">
+            <label class="my-2" for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              placeholder="Enter your Name"
+            />
+          </section>
+          <section class="email my-2">
+            <label class="my-2" for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              class="form-control"
+              placeholder="Enter your E-mail"
+            />
+          </section>
+          <section class="feedback">
+            <label for="feedback" class="my-2"> Your Message </label>
+            <textarea
+              name="feedback-msg"
+              id="feedback"
+              class="d-block w-100"
+              rows="5"
+            ></textarea>
+          </section>
+          <button class="btn btn-primary my-3 w-100">Submit</button>
+        </form>
+      </section>
+    </section>
+    <!-- Main content -->
 
     <script src="../Bootstrap/js/bootstrap.bundle.js"></script>
   </body>
