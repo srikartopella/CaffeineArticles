@@ -92,9 +92,9 @@
         "
       >
         <h1 class="fw-bold my-2">Feedback!!</h1>
-        <form class="form-control w-100">
+        <form class="form-control w-100" name="Feedback" method="POST" netlify>
           <section class="name my-2">
-            <label class="my-2" for="name">Name</label>
+            <label class="my-2" name="name" for="name">Name</label>
             <input
               type="text"
               id="name"
@@ -103,7 +103,7 @@
             />
           </section>
           <section class="email my-2">
-            <label class="my-2" for="email">Email</label>
+            <label name="email" class="my-2" for="email">Email</label>
             <input
               type="text"
               id="email"
